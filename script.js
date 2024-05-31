@@ -17,10 +17,10 @@ function handleCellClick(event) {
     const cell = event.target;
     cell.textContent = currentPlayer;
     if (checkWinner(currentPlayer)) {
-        alert(`${currentPlayer} победил!`);
+        alert(`${currentPlayer} Win!`);
         startGame();
     } else if (checkDraw()) {
-        alert('Ничья!');
+        alert('Draw!');
         startGame();
     } else {
         currentPlayer = currentPlayer === '×' ? '○' : '×';
